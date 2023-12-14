@@ -1,0 +1,71 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color:lightskyblue;
+}
+
+#window {
+    padding: 1.3rem;
+    width: 25rem;
+    max-width: 85dvw;
+
+    position: absolute;
+    top: 50dvh;
+    left: 50dvw;
+    transform: translate(-50%, -50%);
+
+    background-color: snow;
+    border-radius: 2rem;
+
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Meiryo UI','Arial',sans-serif;
+}
+
+h1 {
+    margin: 0rem;
+}
+h1 > .Ge {
+    color:cadetblue;
+}
+h1 > .N {
+    color:dodgerblue;
+}
+h1 > .S {
+    color:orange;
+}
+h1 > .O {
+    color:orchid;
+}
+
+h2 {
+    margin: 0 auto 1rem 0.1rem;
+    color:gray;
+}
+
+main {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 0.5rem;
+}
+
+label {
+    text-align: right;
+}
+
+textarea {
+    padding: 1px;
+
+    vertical-align: text-top;
+
+    resize: vertical;
+    font-family: inherit;
+    font-size:inherit;
+}
+
+#GeNSO {
+    width: auto;
+}
