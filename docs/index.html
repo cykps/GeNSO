@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeNSO Generator</title>
+
+    <title>GeNSO Translater</title>
+    <meta name="description" content="Translate from genso to GeNSO" />
 
     <link rel="stylesheet" href="./style.css">
     <script src="./GeNSO.js"></script>
 </head>
+
 <body>
     <div id="window">
         <h1><span class="Ge">Ge</span><span class="N">N</span><span class="S">S</span><span class="O">O</span></h1>
-        <h2>Generator</h2>
+        <h2>Translater</h2>
         <main>
 
-                <label for="genso">Input:</label>
-                <textarea id="genso"></textarea>
+            <label for="genso">Input:</label>
+            <textarea id="genso"></textarea>
 
-                <label for="exit-status" id="maxWidthLabel">exit status:</label>
-                <textarea id="exit-status" rows="1"></textarea>
+            <label for="exit-status" id="maxWidthLabel">exit status:</label>
+            <textarea id="exit-status" rows="1"></textarea>
 
-                <label for="GeNSO">Output:</label>
-                <textarea id="GeNSO"></textarea>
+            <label for="GeNSO">Output:</label>
+            <textarea id="GeNSO"></textarea>
 
         </main>
     </div>
 
+    <footer>
+        <p class="copy" target="_blank" rel="noopener noreferrer">&copy; 2023 <a href="https://twitter.com/Mercury__dev">Merucu</a></p>
+    </footer>
+
     <script src="./script.js"></script>
 </body>
+
 </html>

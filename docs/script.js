@@ -5,7 +5,7 @@ const
     gensoEle = document.querySelector('#genso'),
     exit_statusEle = document.querySelector('#exit-status'),
     GeNSOEle = document.querySelector('#GeNSO'),
-    maxWidthLabelEle =document.querySelector('#maxWidthLabel');
+    maxWidthLabelEle = document.querySelector('#maxWidthLabel');
 
 gensoEle.addEventListener('input', () => {
     console.log(gensoEle.value.split('\n'))
@@ -16,5 +16,13 @@ gensoEle.addEventListener('input', () => {
     GeNSOEle.style.height = (GeNSOEle.scrollHeight - 1 * 2) + 'px';
     exit_statusEle.style.height = (exit_statusEle.scrollHeight - 1 * 2) + 'px';
     gensoEle.style.height = (gensoEle.scrollHeight - 1 * 2) + 'px';
-    bodyEle.style.marginTop = (window.innerHeight - windowEle.scrollHeight) / 2;
+    setWindowCenter();
 });
+
+function setWindowCenter() {
+    windowEle.style.marginTop = `max(${(window.innerHeight - windowEle.scrollHeight) / 2}px, calc(7.5dvw - 1.3rem))`;
+}
+
+setWindowCenter();
+
+window.onresize = setWindowCenter;

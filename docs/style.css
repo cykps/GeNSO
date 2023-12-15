@@ -4,44 +4,40 @@ html {
 
 body {
     margin: 0;
-    background-color:lightskyblue;
+    background-color: lightskyblue;
 }
 
 #window {
+    margin: 0 0 calc(7.5dvw - 1.3rem) calc((100dvw - (min(25rem, 85dvw) + 1.3rem * 2))/2);
     padding: 1.3rem;
     width: 25rem;
     max-width: 85dvw;
 
-    position: absolute;
-    top: 50dvh;
-    left: 50dvw;
-    transform: translate(-50%, -50%);
-
     background-color: snow;
     border-radius: 2rem;
 
-    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Meiryo UI','Arial',sans-serif;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo UI', 'Arial', sans-serif;
 }
 
 h1 {
     margin: 0rem;
 }
-h1 > .Ge {
-    color:cadetblue;
+h1>.Ge {
+    color: cadetblue;
 }
-h1 > .N {
-    color:dodgerblue;
+h1>.N {
+    color: dodgerblue;
 }
-h1 > .S {
-    color:orange;
+h1>.S {
+    color: orange;
 }
-h1 > .O {
-    color:orchid;
+h1>.O {
+    color: orchid;
 }
 
 h2 {
     margin: 0 auto 1rem 0.1rem;
-    color:gray;
+    color: gray;
 }
 
 main {
@@ -63,9 +59,29 @@ textarea {
 
     resize: vertical;
     font-family: inherit;
-    font-size:inherit;
+    font-size: inherit;
 }
 
 #GeNSO {
     width: auto;
+}
+
+footer {
+    width: 100%;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+}
+
+.copy, .copy * {
+    margin: 0;
+    padding: 0;
+
+    color: gray;
 }
